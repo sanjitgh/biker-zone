@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Biker Zone</title>
@@ -9,103 +8,322 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- daisyui cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- tailwind castomization -->
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: "#da373d",
-                        orange: "#E76F51",
-                    },
-                },
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              orange: "#E76F51",
             },
-        };
+          },
+        },
+      };
     </script>
     <style>
-        .poppins {
-            font-family: "Poppins", sans-serif;
-        }
+      .poppins {
+        font-family: "Poppins", sans-serif;
+      }
 
-        a:active {
-            background-color: #e76f51 !important;
-        }
+      .background{
+        background-color: rgba(231, 111, 81, 0.1);
+      }
+
+      a:active {
+        background-color: #e76f51 !important;
+      }
     </style>
-</head>
+  </head>
 
-<body class="poppins">
+  <body class="poppins">
     <!-- header section -->
-    <header class="max-w-[1140px] mx-auto">
-        <nav>
-            <div class="navbar">
-                <div class="navbar-start w-3/4 xl:w-1/2">
-                    <!-- mobile menu -->
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost xl:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li>
-                                <a href="#"
-                                    class="font-medium text-black hover:bg-transparent focus:bg-orange focus:text-white active:bg-transparent">Home</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="font-medium text-black hover:bg-transparent focus:bg-orange focus:text-white active:bg-transparent">Shop</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="font-medium text-black hover:bg-transparent focus:bg-orange focus:text-white active:bg-transparent">News</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="font-medium text-black hover:bg-transparent focus:bg-orange focus:text-white active:bg-transparent">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- logo -->
-                    <a class="font-bold text-2xl xl:text-3xl text-black" href="">Bike Dekho</a>
-                </div>
-
-                <div class="navbar-end w-1/4 xl:w-1/2">
-                    <!-- desktop menu -->
-                    <div class="hidden xl:block">
-                        <ul class="menu menu-horizontal px-1 mr-3 gap-2">
-                            <li>
-                                <a href="#"
-                                    class="font-medium text-black hover:bg-transparent focus:bg-orange focus:text-white active:bg-transparent">Home</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="font-medium text-black hover:bg-transparent focus:bg-orange focus:text-white active:bg-transparent">Shop</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="font-medium text-black hover:bg-transparent focus:bg-orange focus:text-white active:bg-transparent">News</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="font-medium text-black hover:bg-transparent focus:bg-orange focus:text-white active:bg-transparent">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <a class="btn bg-orange text-white px-8 hover:bg-orange">Login</a>
-                </div>
+    <header class="max-w-[1140px] mx-auto py-5">
+      <nav>
+        <div class="navbar">
+          <div class="navbar-start w-3/4 xl:w-1/2">
+            <!-- mobile menu -->
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost xl:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="font-medium text-black hover:bg-transparent focus:bg-orange focus:text-white active:bg-transparent"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-medium text-black hover:bg-transparent focus:bg-orange focus:text-white active:bg-transparent"
+                    >Shop</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-medium text-black hover:bg-transparent focus:bg-orange focus:text-white active:bg-transparent"
+                    >News</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-medium text-black hover:bg-transparent focus:bg-orange focus:text-white active:bg-transparent"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
             </div>
-        </nav>
-    </header>
-</body>
+            <!-- logo -->
+            <a class="font-bold text-2xl xl:text-3xl text-black" href=""
+              >Bike Dekho</a
+            >
+          </div>
 
+          <div class="navbar-end w-1/4 xl:w-1/2">
+            <!-- desktop menu -->
+            <div class="hidden xl:block">
+              <ul class="menu menu-horizontal px-1 mr-3 gap-2">
+                <li>
+                  <a
+                    href="#"
+                    class="font-medium text-black hover:bg-transparent focus:bg-orange focus:text-white active:bg-transparent"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-medium text-black hover:bg-transparent focus:bg-orange focus:text-white active:bg-transparent"
+                    >Shop</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-medium text-black hover:bg-transparent focus:bg-orange focus:text-white active:bg-transparent"
+                    >News</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-medium text-black hover:bg-transparent focus:bg-orange focus:text-white active:bg-transparent"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <a class="btn bg-orange text-white px-8 hover:bg-orange">Login</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main section -->
+    <main class="max-w-[1140px] mx-auto px-3 xl:px-0">
+      <!-- banner section -->
+      <section class="my-12 py-8 rounded-md background">
+        <!-- carousel -->
+        <div class="carousel w-full bg-[rgba(231, 111, 81, 0.1)] rounded-md">
+          <!-- slide 1 -->
+          <div id="slide1" class="carousel-item relative w-full">
+            <!-- hero start -->
+            <div class="hero px-5">
+              <div class="hero-content flex-col lg:flex-row-reverse">
+                <div class="xl:w-1/2">
+                  <img src="images/slider/bike1.png" class="w-full" />
+                </div>
+                <div class="">
+                  <h1
+                    class="text-4xl xl:text-6xl font-bold text-black max-w-[480px]"
+                  >
+                    Ride-on R15 V4 with Smile
+                  </h1>
+                  <p class="py-6 max-w-md">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim velit
+                    mollit.
+                  </p>
+                  <button class="btn bg-orange text-white px-6">
+                    Purchase
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- hero end -->
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a
+                href="#slide4"
+                class="btn bg-transparent border-none shadow-none text-xl hover:text-orange hover:bg-transparent"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="btn bg-transparent border-none shadow-none text-xl hover:text-orange hover:bg-transparent"
+                >❯</a
+              >
+            </div>
+          </div>
+          <!-- slide 2 -->
+          <div id="slide2" class="carousel-item relative w-full">
+            <!-- hero start -->
+            <div class="hero px-5">
+              <div class="hero-content flex-col lg:flex-row-reverse">
+                <div class="xl:w-1/2">
+                  <img src="images/slider/bike2.png" class="w-full" />
+                </div>
+                <div>
+                  <h1
+                    class="text-4xl xl:text-6xl font-bold text-black max-w-[480px]"
+                  >
+                    Ride-on R15 V4 with Smile
+                  </h1>
+                  <p class="py-6 max-w-md">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim velit
+                    mollit.
+                  </p>
+                  <button class="btn bg-orange text-white px-6">
+                    Purchase
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- hero end -->
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a
+                href="#slide1"
+                class="btn bg-transparent border-none shadow-none text-xl hover:text-orange hover:bg-transparent"
+                >❮</a
+              >
+              <a
+                href="#slide3"
+                class="btn bg-transparent border-none shadow-none text-xl hover:text-orange hover:bg-transparent"
+                >❯</a
+              >
+            </div>
+          </div>
+          <!-- slide 3 -->
+          <div id="slide3" class="carousel-item relative w-full">
+            <!-- hero start -->
+            <div class="hero px-5">
+              <div class="hero-content flex-col lg:flex-row-reverse">
+                <div class="xl:w-1/2">
+                  <img src="images/slider/bike3.png" class="w-full" />
+                </div>
+                <div>
+                  <h1
+                    class="text-4xl xl:text-6xl font-bold text-black max-w-[480px]"
+                  >
+                    Ride-on R15 V4 with Smile
+                  </h1>
+                  <p class="py-6 max-w-md">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim velit
+                    mollit.
+                  </p>
+                  <button class="btn bg-orange text-white px-6">
+                    Purchase
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- hero end -->
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a
+                href="#slide2"
+                class="btn bg-transparent border-none shadow-none text-xl hover:text-orange hover:bg-transparent"
+                >❮</a
+              >
+              <a
+                href="#slide4"
+                class="btn bg-transparent border-none shadow-none text-xl hover:text-orange hover:bg-transparent"
+                >❯</a
+              >
+            </div>
+          </div>
+          <!-- slide 4 -->
+          <div id="slide4" class="carousel-item relative w-full">
+            <!-- hero start -->
+            <div class="hero px-5">
+              <div class="hero-content flex-col lg:flex-row-reverse">
+                <div class="xl:w-1/2">
+                  <img src="images/slider/bike4.png" class="w-full" />
+                </div>
+                <div>
+                  <h1
+                    class="text-4xl xl:text-6xl font-bold text-black max-w-[480px]"
+                  >
+                    Ride-on R15 V4 with Smile
+                  </h1>
+                  <p class="py-6 max-w-md">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim velit
+                    mollit.
+                  </p>
+                  <button class="btn bg-orange text-white px-6">
+                    Purchase
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- hero end -->
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a
+                href="#slide3"
+                class="btn bg-transparent border-none shadow-none text-xl hover:text-orange hover:bg-transparent"
+                >❮</a
+              >
+              <a
+                href="#slide1"
+                class="btn bg-transparent border-none shadow-none text-xl hover:text-orange hover:bg-transparent"
+                >❯</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
